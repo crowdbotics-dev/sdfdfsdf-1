@@ -11,4 +11,9 @@ const newConnector = axios.create({
   },
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
-export const apiService = {}
+function newconnector33_get_user_new_paramasdad_read(payload) {
+  return newConnector.get(`/user/?new_param=asdad`, {
+    params: { new_param: payload.new_param }
+  })
+}
+export const apiService = { newconnector33_get_user_new_paramasdad_read }
